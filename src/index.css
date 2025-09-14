@@ -1,0 +1,402 @@
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  color: black;
+
+
+}
+
+:root {
+  --bcolor-: aqua;
+  --fcolor-: black;
+  --main-color-: #ff6f59;
+  --font-: 'Courier New', Courier, monospace;
+}
+
+.red {
+  color: var(--main-color-);
+}
+
+nav {
+  height: 11vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: var(--bcolor-);
+  font-family: Arial, sans-serif;
+}
+
+.logo {
+  width: 20%;
+  text-align: center;
+}
+
+.logo p {
+  font-size: 2rem;
+  font-family: var(--font-);
+  font-weight: bolder;
+  color: var(--main-color-);
+}
+
+ul {
+  width: 55%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+ul a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: var(--fcolor-);
+  font-family: var(--font-);
+}
+
+.buttons {
+  width: 22%;
+  display: flex;
+  justify-content: center;
+}
+
+.buttons .signin {
+  height: 7vh;
+  padding: 5% 60%;
+  background-color: var(--main-color-);
+  font-family: var(--font-);
+  color: var(--fcolor-);
+  border: none;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* Hero section */
+
+.hero-section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: url('../banner.jpg') no-repeat center;
+}
+
+.hero-section h1 {
+  font-size: 5rem;
+  color: white;
+  font-family: var(--font-);
+  line-height: 0px;
+}
+
+.hero-section p {
+  font-size: 1.1rem;
+  color: white;
+  font-weight: 100;
+  font-family: var(--font-);
+}
+
+.stream {
+  padding: 13px 25px;
+  font-family: var(--font-);
+  background-color: var(--main-color-);
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+
+/* footer */
+
+.footer {
+  /* padding: 40px 0; */
+  height: 40vh;
+  width: 100%;
+  background-color: rgb(73, 80, 80);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+
+.web-intro {
+  height: 35vh;
+  width: 27%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.web-intro .footer-logo {
+  width: 100%;
+  font-size: 2.4rem;
+  text-align: left;
+
+  font-family: var(--font-);
+}
+
+.qiuck-links {
+  height: 35vh;
+  width: 27%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: var(--font-);
+}
+
+.qiuck-links ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.qiuck-links h2 {
+  font-size: 2.4rem;
+  font-family: var(--font-);
+}
+
+.qiuck-links li a {
+  font-size: 1.2rem;
+  font-family: var(--font-);
+}
+
+.contact-box {
+  height: 35vh;
+  width: 27%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-box h2 {
+  font-size: 2.4rem;
+  font-family: var(--font-);
+
+}
+
+.contact-box ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: var(--font-);
+}
+
+.contact-box ul li {
+  width: 100%;
+  text-align: center;
+
+}
+
+/* Membership section */
+
+.membership-section {
+  height: 90vh;
+  width: 100%;
+}
+
+/* classes section */
+
+.classes-section {
+  height: 170vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5%;
+}
+
+.offer {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 5%;
+}
+
+.offer img {
+  height: 42vh;
+  width: 24%;
+  background-position: center;
+  background-size: contain;
+  border-radius: 10px;
+}
+
+.child-box {
+  width: 80%;
+}
+
+.child-box h2 {
+  font-size: 3rem;
+  margin: 0;
+  font-family: var(--font-);
+}
+
+.child-box p {
+  font-size: 1.2rem;
+  font-family: sans-serif;
+}
+
+.child-box .btn {
+  padding: 15px 25px;
+  font-size: 1.2rem;
+  border: none;
+  background-color: var(--main-color-);
+  border-radius: 5px;
+}
+
+/* about section */
+
+.about-section {
+  height: 75vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 5%;
+}
+
+.about-image {
+  height: 50vh;
+  width: 28%;
+  border-radius: 10px;
+}
+
+.about-artical {
+  height: 50vh;
+  width: 35%;
+}
+
+.about-artical h2 {
+  font-size: 2.5rem;
+  font-family: sans-serif;
+  margin: 0;
+  font-family: var(--font-);
+}
+
+.about-artical p {
+  font-size: 1rem;
+  font-family: sans-serif;
+  font-family: var(--font-);
+}
+
+.about-artical .btn {
+  padding: 17px 25px;
+  font-size: 1.2rem;
+  border: none;
+  background-color: var(--main-color-);
+  border-radius: 5px;
+}
+
+/* sign in page */
+
+
+.singin-section {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+form {
+  height: 50vh;
+  width: 22%;
+  border-color: aqua;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 10px black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  gap: 10%;
+}
+
+form .input-email,
+.input-password {
+  height: 5vh;
+  width: 70%;
+  border: none;
+  border-bottom: 1px solid black;
+}
+form input::placeholder{
+  font-family: var(--font-);
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: black;
+}
+.singin-section h3{
+  font-size: 2.7rem;
+  font-family: var(--font-);
+}
+.sign-btn {
+  padding: 10px 35px;
+  font-size: 1.2rem;
+  border: none;
+  background-color: var(--main-color-);
+  border-radius: 5px;
+  font-family: var(--font-);
+}
+
+/* Contact form */
+
+.contact-section{
+  height: 95vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact-section h3{
+  font-size: 2.7rem;
+  font-family: var(--font-);
+}
+.contact-section form {
+  height: 65vh;
+  width: 27%;
+  border-color: aqua;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 10px black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  gap: 10%;
+}
+
+.contact-section textarea {
+  border-radius: 10px;
+  border: 2px solid black;
+}
